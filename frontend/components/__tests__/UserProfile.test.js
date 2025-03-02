@@ -48,5 +48,8 @@ describe('RTL tests for UserProfile', () => {
 
 		// select by data-testid
 		expect(screen.queryByTestId('location')).toHaveTextContent('New York');
+
+		// select by value
+		expect(screen.queryByDisplayValue('Search...')).toBeInTheDocument();
 	});
 });
